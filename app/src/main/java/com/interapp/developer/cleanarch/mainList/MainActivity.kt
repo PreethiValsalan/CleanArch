@@ -33,12 +33,9 @@ class MainActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-
         mViewModel = ViewModelProviders.of(this, mViewModelFactory)[MainListViewModel::class.java]
-
         mViewModel.closingListLiveData?.observe(this, Observer {
             mAdapter.submitList(it)
 
