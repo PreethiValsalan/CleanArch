@@ -1,6 +1,6 @@
 # CleanArch
 
-This demo application is a Guide to Clean Architecture implementation in Android Applicationsusing kotlin.
+This demo application is a Guide to Clean Architecture implementation in Android Applications using kotlin.
 
 <ul>
   <li>LiveData</li>
