@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="pokemonModel" type="com.interapp.developer.domain.model.IPokemon"/>
+    </data>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/poke_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:text='@{pokemonModel.name}'
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</layout>
