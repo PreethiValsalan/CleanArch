@@ -17,6 +17,6 @@ This demo application is a Guide to Clean Architecture implementation in Android
 The application has three libraries.
 <ul>
   <li><b>Domain layer</b> - domain - Which represents the business logic of the application</li>
-  <li><b>Data layer</b> - datawrapper- Which dispense the required data for the application to the domain layer from the data sources </li>
-   <li><b>Presentation layer</b> - datawrapper- Which depends on the the domain and data layer to repesent the UI</li>
+  <li><b>Data layer</b> - datawrapper - Which dispense the required data for the application to the domain layer from the data sources </li>
+   <li><b>Presentation layer</b> - app - Which depends on the the domain and data layer to repesent the UI</li>
 </ul>
